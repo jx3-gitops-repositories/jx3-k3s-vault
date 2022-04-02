@@ -50,8 +50,7 @@ jxRequirements:
     username: babadofar
   repository: bucketrepo
   secretStorage: vault
-  vault:
-    url: https://vault.jx-vault:8200
+  vault: {}
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:
   enabled: false

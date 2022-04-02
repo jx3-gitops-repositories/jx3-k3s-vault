@@ -34,4 +34,5 @@ spec:
     username: babadofar
   repository: bucketrepo
   secretStorage: vault
+  vault: {}
   webhook: lighthouse
