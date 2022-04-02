@@ -35,5 +35,5 @@ spec:
   repository: bucketrepo
   secretStorage: vault
   vault:
-    url: "192.168.64.2:80"
+    url: 192.168.64.2:80
   webhook: lighthouse
