@@ -2,4 +2,3 @@ storage:
   inmem: {}
 dev:
   enabled: true
-  devRootToken: secretToken
