@@ -22,7 +22,7 @@ spec:
     repository: jx3-k3s-vault
   - key: staging
   ingress:
-    domain: ""
+    domain: 10.43.241.89.nip.io
     ignoreLoadBalancer: true
     kind: ingress
     namespaceSubDomain: .jx.
