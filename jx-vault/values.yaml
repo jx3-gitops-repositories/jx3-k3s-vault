@@ -1,4 +1,2 @@
-storage:
-  inmem: {}
-dev:
-  enabled: true
+dataStorage:
+  size: 1Gi

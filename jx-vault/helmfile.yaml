@@ -17,6 +17,8 @@ releases:
   name: vault-instance
   version: 1.0.25
   forceNamespace: ""
+  needs:
+    - vault-operator
   skipDeps: null
 templates: {}
 missingFileHandler: ""
