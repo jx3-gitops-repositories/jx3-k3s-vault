@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - babadofar/jx3-k3s-vault
-      target_url: http://lighthouse.jx./merge/status
+      target_url: http://lighthouse.jx.10.43.241.89.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
