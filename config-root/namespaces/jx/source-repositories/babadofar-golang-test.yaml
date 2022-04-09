@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: babadofar
+    provider: github
+    repository: golang-test
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: babadofar-golang-test
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/babadofar/golang-test.git
+  org: babadofar
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: golang-test
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/babadofar/golang-test
