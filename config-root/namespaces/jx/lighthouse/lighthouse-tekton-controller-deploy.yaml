@@ -20,7 +20,7 @@ spec:
     metadata:
       labels:
         app: lighthouse-tekton-controller
-      annotations: {jenkins-x.io/hash: '4af9ef1d24fa24f49fa28378f4e47a75516df24d9f0f4dd34b286284dc1a6612'}
+      annotations: {jenkins-x.io/hash: '06d389d11a90693ceac1adf136f3acd99570b53d37e8ff4aa0f33c5ef45ffe59'}
     spec:
       serviceAccountName: lighthouse-tekton-controller
       containers:
@@ -29,7 +29,7 @@ spec:
           imagePullPolicy: IfNotPresent
           args:
             - --namespace=jx
-            - --dashboard-url=http://dashboard.jx.10.43.241.89.nip.io
+            - --dashboard-url=http://dashboard.jx.10.43.121.114.nip.io
             - --dashboard-template=namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}
           ports:
             - name: metrics
@@ -54,7 +54,7 @@ spec:
             - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
               value: "namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}"
             - name: LIGHTHOUSE_VERSIONSTREAM_JENKINS_X_JX3_PIPELINE_CATALOG
-              value: "32e0ac0829b454c184d34e3c276cd022657eb23f"
+              value: "d54c36d32501f2b4b46454be7f42641c5fa3b264"
           envFrom:
             - secretRef:
                 name: jx-boot-job-env-vars
