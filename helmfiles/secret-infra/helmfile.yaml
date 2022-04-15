@@ -18,9 +18,9 @@ repositories:
 releases:
 - chart: external-secrets/kubernetes-external-secrets
   version: 8.3.0
-  name: kubernetes-external-secrets
   needs:
-    - vault-instance
+  - vault-instance
+  name: kubernetes-external-secrets
   values:
   - ../../versionStream/charts/external-secrets/kubernetes-external-secrets/values.yaml.gotmpl
   - jx-values.yaml
@@ -30,19 +30,17 @@ releases:
   values:
   - jx-values.yaml
 - chart: banzaicloud-stable/vault-operator
-  name: vault-operator
   version: 1.15.3
-  forceNamespace: ""
-  skipDeps: null
+  name: vault-operator
   values:
-    - vault-values.yaml
+  - vault-values.yaml
+  - jx-values.yaml
 - chart: jx3/vault-instance
-  name: vault-instance
   version: 1.0.25
-  forceNamespace: ""
   needs:
-    - vault-operator
-  skipDeps: null
-
+  - vault-operator
+  name: vault-instance
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
