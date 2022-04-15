@@ -11,10 +11,16 @@ repositories:
   url: https://kubernetes-charts.banzaicloud.com
 - name: jxgh
   url: https://jenkins-x-charts.github.io/repo
+- name: banzaicloud-stable
+  url: https://kubernetes-charts.banzaicloud.com
+- name: jx3
+  url: https://jenkins-x-charts.github.io/repo
 releases:
 - chart: external-secrets/kubernetes-external-secrets
   version: 8.3.0
   name: kubernetes-external-secrets
+  needs:
+    - vault-instance
   values:
   - ../../versionStream/charts/external-secrets/kubernetes-external-secrets/values.yaml.gotmpl
   - jx-values.yaml
@@ -23,5 +29,20 @@ releases:
   name: pusher-wave
   values:
   - jx-values.yaml
+- chart: banzaicloud-stable/vault-operator
+  name: vault-operator
+  version: 1.15.3
+  forceNamespace: ""
+  skipDeps: null
+  values:
+    - vault-values.yaml
+- chart: jx3/vault-instance
+  name: vault-instance
+  version: 1.0.25
+  forceNamespace: ""
+  needs:
+    - vault-operator
+  skipDeps: null
+
 templates: {}
 renderedvalues: {}
