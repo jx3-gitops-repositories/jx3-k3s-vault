@@ -9,17 +9,12 @@ releases:
 - chart: banzaicloud-stable/vault-operator
   name: vault-operator
   version: 1.15.3
-  forceNamespace: ""
-  skipDeps: null
   values:
-    - values.yaml
+    - jx-vault-values.yaml
 - chart: jx3/vault-instance
   name: vault-instance
   version: 1.0.25
-  forceNamespace: ""
   needs:
     - vault-operator
-  skipDeps: null
 templates: {}
-missingFileHandler: ""
 renderedvalues: {}
