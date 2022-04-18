@@ -19,8 +19,6 @@ releases:
 - chart: jx3/vault-instance
   name: vault-instance
   version: 1.0.25
-  values:
-    - jx-values.yaml
   needs:
     - vault-operator
 templates: {}
