@@ -4,6 +4,6 @@ metadata:
   creationTimestamp: null
 spec:
   repositories:
-  - gitRef: d54c36d32501f2b4b46454be7f42641c5fa3b264
+  - gitRef: b132b0864c3a7588615621ce24f308d832dd2463
     gitUrl: https://github.com/jenkins-x/jx3-pipeline-catalog
     label: JX3 Pipeline Catalog
