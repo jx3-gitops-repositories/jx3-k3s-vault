@@ -1,0 +1,17 @@
+# Source: vault-instance/templates/pvc.yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: vault-file
+  annotations:
+    meta.helm.sh/release-name: 'vault-instance'
+  namespace: secret-infra
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  # https://kubernetes.io/docs/concepts/storage/persistent-volumes/#class-1
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi

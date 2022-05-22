@@ -53,7 +53,7 @@ spec:
             - mountPath: /workspace
               name: workspace-volume
           workingDir: /workspace/source
-      dnsPolicy: ClusterFirst
+     dnsPolicy: ClusterFirst
       restartPolicy: Never
       schedulerName: default-scheduler
       serviceAccountName: jx-boot-job

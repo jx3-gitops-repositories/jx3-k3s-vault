@@ -1,0 +1,10 @@
+# Source: vault-instance/templates/sa.yaml
+kind: ServiceAccount
+apiVersion: v1
+metadata:
+  name: vault
+  namespace: secret-infra
+  annotations:
+    meta.helm.sh/release-name: 'vault-instance'
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
