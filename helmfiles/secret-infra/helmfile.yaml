@@ -17,7 +17,7 @@ repositories:
   url: https://jenkins-x-charts.github.io/repo
 releases:
 - chart: external-secrets/kubernetes-external-secrets
-  version: 8.3.0
+  version: 8.5.5
   needs:
   - vault-instance
   name: kubernetes-external-secrets
