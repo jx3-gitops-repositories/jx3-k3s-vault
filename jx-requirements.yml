@@ -5,8 +5,8 @@ spec:
     enabled: false
     schedule: ""
   cluster:
-    chartRepository: https://github.com/jenkins-x-bdd/repo.git
     chartKind: pages
+    chartRepository: https://github.com/jenkins-x-bdd/repo.git
     clusterName: kind
     devEnvApprovers:
     - todo
@@ -18,10 +18,11 @@ spec:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: adithya180498
+    repository: jx3-k3s-vault
   - key: staging
   ingress:
     domain: ""
-    externalDNS: false
     ignoreLoadBalancer: true
     kind: ingress
     namespaceSubDomain: .jx.
@@ -29,6 +30,9 @@ spec:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: jenkinx
   repository: bucketrepo
   secretStorage: vault
+  vault: {}
   webhook: lighthouse
