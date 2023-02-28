@@ -6,6 +6,10 @@ data:
       repos:
       - adithya180498/jx3-k3s-vault
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - adithya180498/jx3
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -16,6 +20,11 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      adithya180498/jx3:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       adithya180498/jx3-k3s-vault:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -26,6 +35,21 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      adithya180498/jx3:
+      - config-updater
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
       adithya180498/jx3-k3s-vault:
       - config-updater
       - approve
@@ -52,6 +76,9 @@ data:
     triggers:
     - repos:
       - adithya180498/jx3-k3s-vault
+      trusted_org: adithya180498
+    - repos:
+      - adithya180498/jx3
       trusted_org: adithya180498
 kind: ConfigMap
 metadata:
