@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         adithya180498/golang: true
+        adithya180498/jenkins-quickstart: true
         adithya180498/jx3: true
         adithya180498/jx3-k3s-vault: true
     plank: {}
@@ -22,6 +23,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         adithya180498/golang: merge
+        adithya180498/jenkins-quickstart: merge
         adithya180498/jx3: merge
         adithya180498/jx3-k3s-vault: merge
       queries:
@@ -36,6 +38,7 @@ data:
         repos:
         - adithya180498/jx3-k3s-vault
         - adithya180498/golang
+        - adithya180498/jenkins-quickstart
         - adithya180498/jx3
       - labels:
         - updatebot
@@ -48,6 +51,7 @@ data:
         repos:
         - adithya180498/jx3-k3s-vault
         - adithya180498/golang
+        - adithya180498/jenkins-quickstart
         - adithya180498/jx3
       target_url: http://lighthouse.jx./merge/status
 kind: ConfigMap
