@@ -12,6 +12,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - adithya180498/jenkins-cwp-quickstart
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - adithya180498/jenkins-quickstart
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -29,6 +33,11 @@ data:
           name: plugins
     external_plugins:
       adithya180498/golang:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      adithya180498/jenkins-cwp-quickstart:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -54,6 +63,20 @@ data:
     owners: {}
     plugins:
       adithya180498/golang:
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
+      adithya180498/jenkins-cwp-quickstart:
       - approve
       - assign
       - help
@@ -125,6 +148,9 @@ data:
       trusted_org: adithya180498
     - repos:
       - adithya180498/golang
+      trusted_org: adithya180498
+    - repos:
+      - adithya180498/jenkins-cwp-quickstart
       trusted_org: adithya180498
     - repos:
       - adithya180498/jenkins-quickstart
