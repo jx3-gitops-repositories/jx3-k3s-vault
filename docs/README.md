@@ -18,7 +18,7 @@
 	    <tr>
 	      <td>jxboot-helmfile-resources</td>
 	      <td title='A Helm chart for the resources for JX Boot'><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jxboot-helmfile-resources</a></td>
-	      <td>1.1.272</td>
+	      <td>1.1.276</td>
 	      <td></td>
 	      <td></td>
 	    </tr>

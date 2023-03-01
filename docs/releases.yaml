@@ -2,18 +2,18 @@
   path: helmfiles/jx/helmfile.yaml
   releases:
   - apiVersion: v1
-    appVersion: 1.1.272
+    appVersion: 1.1.276
     description: A Helm chart for the resources for JX Boot
-    firstDeployed: "2023-02-17T05:19:17Z"
+    firstDeployed: "2023-03-01T05:14:33Z"
     home: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2023-02-17T05:19:17Z"
+    lastDeployed: "2023-03-01T05:14:33Z"
     name: jxboot-helmfile-resources
     releaseName: jxboot-helmfile-resources
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jxboot-helmfile-resources
-    version: 1.1.272
+    version: 1.1.276
   - apiVersion: v1
     description: 'This chart installs the jx-preview CRD and garbagecollection job '
     firstDeployed: "2023-02-17T05:19:19Z"
