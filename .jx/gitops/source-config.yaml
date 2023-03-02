@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: golang
+    - name: golang-http123
     - name: jenkins-cwp-quickstart
     - name: jenkins-quickstart
     - name: jx3
