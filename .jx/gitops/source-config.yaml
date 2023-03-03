@@ -10,6 +10,7 @@ spec:
     repositories:
     - name: angular
     - name: asonet-app
+    - name: dlang
     - name: golang
     - name: golang-http123
     - name: jenkins-cwp-quickstart
