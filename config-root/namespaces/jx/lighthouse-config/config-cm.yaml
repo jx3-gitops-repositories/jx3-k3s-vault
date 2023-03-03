@@ -16,6 +16,7 @@ data:
         adithya180498/jenkins-quickstart: true
         adithya180498/jx3: true
         adithya180498/jx3-k3s-vault: true
+        adithya180498/rrr: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -36,6 +37,7 @@ data:
         adithya180498/jenkins-quickstart: merge
         adithya180498/jx3: merge
         adithya180498/jx3-k3s-vault: merge
+        adithya180498/rrr: merge
       queries:
       - labels:
         - approved
@@ -55,6 +57,7 @@ data:
         - adithya180498/jenkins-cwp-quickstart
         - adithya180498/jenkins-quickstart
         - adithya180498/jx3
+        - adithya180498/rrr
       - labels:
         - updatebot
         missingLabels:
@@ -73,6 +76,7 @@ data:
         - adithya180498/jenkins-cwp-quickstart
         - adithya180498/jenkins-quickstart
         - adithya180498/jx3
+        - adithya180498/rrr
       target_url: http://lighthouse.jx.172.31.44.247.nip.io/merge/status
 kind: ConfigMap
 metadata:
