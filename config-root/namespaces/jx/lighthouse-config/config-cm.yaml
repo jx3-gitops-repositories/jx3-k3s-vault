@@ -9,6 +9,7 @@ data:
       enabled:
         adithya180498/angular: true
         adithya180498/asonet-app: true
+        adithya180498/dlang: true
         adithya180498/golang: true
         adithya180498/golang-http123: true
         adithya180498/jenkins-cwp-quickstart: true
@@ -28,6 +29,7 @@ data:
       merge_method:
         adithya180498/angular: merge
         adithya180498/asonet-app: merge
+        adithya180498/dlang: merge
         adithya180498/golang: merge
         adithya180498/golang-http123: merge
         adithya180498/jenkins-cwp-quickstart: merge
@@ -47,6 +49,7 @@ data:
         - adithya180498/jx3-k3s-vault
         - adithya180498/angular
         - adithya180498/asonet-app
+        - adithya180498/dlang
         - adithya180498/golang-http123
         - adithya180498/golang
         - adithya180498/jenkins-cwp-quickstart
@@ -64,6 +67,7 @@ data:
         - adithya180498/jx3-k3s-vault
         - adithya180498/angular
         - adithya180498/asonet-app
+        - adithya180498/dlang
         - adithya180498/golang-http123
         - adithya180498/golang
         - adithya180498/jenkins-cwp-quickstart
