@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: adithya180498
+    provider: github
+    repository: angular
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: adithya180498-angular
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/adithya180498/angular.git
+  org: adithya180498
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: angular
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/adithya180498/angular
