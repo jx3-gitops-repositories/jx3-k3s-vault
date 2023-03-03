@@ -65,7 +65,7 @@ data:
         - adithya180498/jenkins-cwp-quickstart
         - adithya180498/jenkins-quickstart
         - adithya180498/jx3
-      target_url: http://lighthouse.jx./merge/status
+      target_url: http://lighthouse.jx.172.31.44.247.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
