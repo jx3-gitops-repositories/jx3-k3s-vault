@@ -16,6 +16,7 @@ spec:
     - name: jenkins-cwp-quickstart
     - name: jenkins-quickstart
     - name: jx3
+    - name: rrr
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
