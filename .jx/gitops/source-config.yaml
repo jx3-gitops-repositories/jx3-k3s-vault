@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: angular
     - name: golang
     - name: golang-http123
     - name: jenkins-cwp-quickstart

@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        adithya180498/angular: true
         adithya180498/golang: true
         adithya180498/golang-http123: true
         adithya180498/jenkins-cwp-quickstart: true
@@ -24,6 +25,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        adithya180498/angular: merge
         adithya180498/golang: merge
         adithya180498/golang-http123: merge
         adithya180498/jenkins-cwp-quickstart: merge
@@ -41,6 +43,7 @@ data:
         - needs-rebase
         repos:
         - adithya180498/jx3-k3s-vault
+        - adithya180498/angular
         - adithya180498/golang-http123
         - adithya180498/golang
         - adithya180498/jenkins-cwp-quickstart
@@ -56,6 +59,7 @@ data:
         - needs-rebase
         repos:
         - adithya180498/jx3-k3s-vault
+        - adithya180498/angular
         - adithya180498/golang-http123
         - adithya180498/golang
         - adithya180498/jenkins-cwp-quickstart

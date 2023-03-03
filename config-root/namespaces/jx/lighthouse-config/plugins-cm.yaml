@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - adithya180498/angular
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - adithya180498/golang-http123
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -36,6 +40,11 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      adithya180498/angular:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       adithya180498/golang:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -71,6 +80,20 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      adithya180498/angular:
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
       adithya180498/golang:
       - approve
       - assign
@@ -168,6 +191,9 @@ data:
     triggers:
     - repos:
       - adithya180498/jx3-k3s-vault
+      trusted_org: adithya180498
+    - repos:
+      - adithya180498/angular
       trusted_org: adithya180498
     - repos:
       - adithya180498/golang-http123
